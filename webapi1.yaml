@@ -1,7 +1,7 @@
 ﻿apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dockersampleconfig-deployment
+  name: webapi1-deployment
 spec:
   replicas: 1
   selector:
@@ -24,7 +24,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: dockersampleconfig
+  name: webapi1
 spec:
   type: LoadBalancer
   ports:
